@@ -15,7 +15,7 @@
 
     "autoload": {
         "psr-4": {
-            "EventCentric\\": ["src/EventCentric", "tests/EventCentric"]
+            "EventCentric\\DomainEvents\\": ["src/EventCentric/DomainEvents"]
         }
     },
 
