@@ -101,4 +101,9 @@ final class DomainEventsArray implements DomainEvents
     {
         throw new DomainEventsAreImmutable();
     }
+
+    public function map(Callable $callback)
+    {
+        array_map($callback, $this->events);
+    }
 }

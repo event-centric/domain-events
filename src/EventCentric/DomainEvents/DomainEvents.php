@@ -8,5 +8,5 @@ use Iterator;
 
 interface DomainEvents extends Countable, Iterator, ArrayAccess
 {
-
+    public function map(Callable $callback);
 }
