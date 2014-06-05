@@ -1,11 +1,11 @@
 <?php
 
-namespace EventCentric\DomainEvent\Implementations;
+namespace EventCentric\DomainEvents\Implementations;
 
 use ArrayObject;
-use EventCentric\DomainEvent\DomainEvent;
-use EventCentric\DomainEvent\DomainEvents;
-use EventCentric\DomainEvent\DomainEventsAreImmutable;
+use EventCentric\DomainEvents\DomainEvent;
+use EventCentric\DomainEvents\DomainEvents;
+use EventCentric\DomainEvents\DomainEventsAreImmutable;
 
 final class DomainEventsArray extends ArrayObject implements DomainEvents
 {

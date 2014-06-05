@@ -1,6 +1,6 @@
 <?php
 
-namespace EventCentric\DomainEvent;
+namespace EventCentric\DomainEvents;
 
 use ArrayAccess;
 use Countable;

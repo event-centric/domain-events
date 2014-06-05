@@ -1,6 +1,6 @@
 <?php
 
-namespace EventCentric\DomainEvent;
+namespace EventCentric\DomainEvents;
 
 final class DomainEventsAreImmutable extends \Exception
 {
