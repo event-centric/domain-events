@@ -2,17 +2,11 @@
 
 namespace EventCentric\DomainEvent;
 
-use ArrayObject;
+use ArrayAccess;
+use Countable;
+use Iterator;
 
-final class DomainEvents extends ArrayObject
+interface DomainEvents extends Countable, Iterator, ArrayAccess
 {
-    public function __construct(array $domainEvents)
-    {
-        foreach($domainEvents as $domainEvent) {
-            if(!$domainEvent instanceof DomainEvent) {
-                throw new \InvalidArgumentException("DomainEvent expected");
-            }
-            $this[] = $domainEvent;
-        }
-    }
+
 }
