@@ -2,7 +2,6 @@
 
 namespace EventCentric\DomainEvents\Implementations;
 
-use ArrayObject;
 use EventCentric\DomainEvents\DomainEvent;
 use EventCentric\DomainEvents\DomainEvents;
 use EventCentric\DomainEvents\DomainEventsAreImmutable;
