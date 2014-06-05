@@ -7,7 +7,7 @@ use EventCentric\DomainEvents\DomainEvent;
 use EventCentric\DomainEvents\DomainEvents;
 use EventCentric\DomainEvents\DomainEventsAreImmutable;
 
-final class DomainEventsArray extends ArrayObject implements DomainEvents
+final class DomainEventsArray implements DomainEvents
 {
     private $events = [];
     public function __construct(array $domainEvents)
@@ -16,7 +16,7 @@ final class DomainEventsArray extends ArrayObject implements DomainEvents
             if (!$domainEvent instanceof DomainEvent) {
                 throw new \InvalidArgumentException("DomainEvent expected");
             }
-            $this[] = $domainEvent;
+            $this->events[] = $domainEvent;
         }
     }
 
@@ -74,7 +74,7 @@ final class DomainEventsArray extends ArrayObject implements DomainEvents
      */
     final public function offsetExists($offset)
     {
-        return parent::offsetExists($offset);
+        return null !==$this->events[$offset];
     }
 
     /**
@@ -83,7 +83,7 @@ final class DomainEventsArray extends ArrayObject implements DomainEvents
      */
     final public function offsetGet($offset)
     {
-        return parent::offsetGet($offset);
+        return $this->events[$offset];
     }
 
     /**
