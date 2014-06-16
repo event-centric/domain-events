@@ -1,7 +1,6 @@
 {
     "name": "event-centric/domain-events",
     "description": "Domain Events",
-    "minimum-stability": "dev",
     "license": "MIT",
     "homepage": "https://github.com/event-centric/domain-events",
     "authors": [
@@ -21,10 +20,6 @@
         "psr-4": {
             "EventCentric\\DomainEvents\\": ["src/EventCentric/DomainEvents"]
         }
-    },
-
-    "config": {
-        "bin-dir": "bin"
     },
 
     "extra": {
