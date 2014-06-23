@@ -20,6 +20,15 @@ final class DomainEventsArray implements DomainEvents
     }
 
     /**
+     * @param DomainEvents $other
+     * @return DomainEvents
+     */
+    public function append(DomainEvents $other)
+    {
+        return new DomainEventsArray($this->events + $other->events);
+    }
+
+    /**
      * @return int
      */
     final public function count()
