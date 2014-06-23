@@ -1,7 +1,6 @@
 {
     "name": "event-centric/domain-events",
     "description": "Domain Events",
-    "minimum-stability": "dev",
     "license": "MIT",
     "homepage": "https://github.com/event-centric/domain-events",
     "authors": [
@@ -23,7 +22,9 @@
         }
     },
 
-    "config": {
-        "bin-dir": "bin"
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.0.x-dev"
+        }
     }
 }
