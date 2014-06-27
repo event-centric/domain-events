@@ -25,7 +25,7 @@ final class DomainEventsArray implements DomainEvents
      */
     public function append(DomainEvents $other)
     {
-        return new DomainEventsArray($this->events + $other->events);
+        return new DomainEventsArray(array_merge($this->events, iterator_to_array($other)));
     }
 
     /**
