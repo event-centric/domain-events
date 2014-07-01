@@ -112,6 +112,6 @@ final class DomainEventsArray implements DomainEvents
 
     public function map(Callable $callback)
     {
-        array_map($callback, $this->events);
+        return array_map($callback, $this->events);
     }
 }
