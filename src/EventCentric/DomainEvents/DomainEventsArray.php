@@ -1,6 +1,6 @@
 <?php
 
-namespace EventCentric\DomainEvents\Implementations;
+namespace EventCentric\DomainEvents;
 
 use EventCentric\DomainEvents\DomainEvent;
 use EventCentric\DomainEvents\DomainEvents;

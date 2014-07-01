@@ -22,6 +22,20 @@
         }
     },
 
+    "autoload-dev": {
+        "psr-4": {
+            "EventCentric\\": ["tests/EventCentric"]
+        }
+    },
+
+    "require-dev": {
+        "phpunit/phpunit": "~4.1"
+    },
+
+    "config": {
+        "bin-dir": "bin"
+    },
+
     "extra": {
         "branch-alias": {
             "dev-master": "0.0.x-dev"
