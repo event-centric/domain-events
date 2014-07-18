@@ -2,10 +2,6 @@
 
 namespace EventCentric\DomainEvents;
 
-use EventCentric\DomainEvents\DomainEvent;
-use EventCentric\DomainEvents\DomainEvents;
-use EventCentric\DomainEvents\DomainEventsAreImmutable;
-
 final class DomainEventsArray implements DomainEvents
 {
     private $events = [];
